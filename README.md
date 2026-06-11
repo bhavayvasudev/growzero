@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GrowZero
 
-## Getting Started
+> Where growth meets design.
 
-First, run the development server:
+GrowZero is a creative growth studio that helps businesses build a stronger digital presence through exceptional websites, social media, branding, and content.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+We partner with ambitious businesses to create digital experiences that look premium, feel authentic, and drive real growth.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What We Do
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* Custom Website Design & Development
+* Social Media Management
+* Short-Form Content & Reels
+* Brand Identity & Positioning
+* Content Creation
+* Digital Growth Strategy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Our Approach
 
-## Learn More
+We don't believe in generic templates or one-size-fits-all solutions.
 
-To learn more about Next.js, take a look at the following resources:
+Every business has a unique story, audience, and goal. That's why every project at GrowZero is crafted from the ground up to reflect the brand behind it.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Our focus is simple:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Design better. Communicate clearly. Grow consistently.**
 
-## Deploy on Vercel
+## Built With
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Next.js
+* TypeScript
+* Tailwind CSS
+* Framer Motion
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Founders
+
+### Bhavay Vasudev
+
+**Co-Founder & Technical Lead**
+
+Responsible for:
+
+* Website Design
+* Website Development
+* Technical Architecture
+* Product & Digital Experiences
+
+### Nipun Goel
+
+**Co-Founder & Growth Lead**
+
+Responsible for:
+
+* Social Media Strategy
+* Content Planning
+* Brand Growth
+* Community Building
+
+## Contact
+
+📧 [infogrowzero@gmail.com](mailto:infogrowzero@gmail.com)
+
+## Status
+
+GrowZero is currently building its portfolio and working with businesses to create premium digital experiences that help them stand out online.
+
+---
+
+© 2026 GrowZero. All rights reserved.
