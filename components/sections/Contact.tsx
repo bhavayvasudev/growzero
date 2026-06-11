@@ -93,6 +93,7 @@ export default function Contact() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   className="flex items-center justify-center h-full min-h-[420px]"
+                  aria-live="polite"
                 >
                   <div className="text-center">
                     <div className="w-16 h-16 rounded-full bg-[#D4DDD4] flex items-center justify-center mx-auto mb-6">
@@ -190,12 +191,14 @@ export default function Contact() {
                       className={`${inputBaseStyles} resize-none`}
                     />
                   </div>
-                  <div className="pt-6 flex flex-col sm:flex-row items-start gap-4">
+                  {/* Cleaned up Submit Button Area */}
+                  <div className="pt-6 md:pt-8 flex">
                     <Button
                       type="submit"
                       variant="primary"
                       size="lg"
                       disabled={isSubmitting}
+                      className="w-full md:w-auto"
                     >
                       {isSubmitting ? (
                         <span className="flex items-center gap-2">
@@ -214,9 +217,6 @@ export default function Contact() {
                         "Send message"
                       )}
                     </Button>
-                    <p className="text-[12px] text-[#6B6560]/60 font-mono pt-1 sm:pt-3">
-                      Opens your email client
-                    </p>
                   </div>
                 </form>
               )}

@@ -9,7 +9,7 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function Work() {
   return (
-    <section id="work" className="py-32 md:py-40 bg-[#FAFAF8]">
+    <section id="work" className="pt-32 md:pt-40 pb-16 md:pb-20 bg-[#FAFAF8]">
       <div className="max-w-[1280px] mx-auto px-6 md:px-10 lg:px-16">
         <SectionLabel>{workContent.label}</SectionLabel>
 
