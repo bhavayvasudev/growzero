@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "GrowZero",
   tagline: "A creative growth studio.",
-  email: "hello@growzero.studio",
+  email: "infogrowzero@gmail.com",
   url: "https://growzero.studio",
   description:
     "GrowZero is a creative growth studio that crafts premium digital experiences — websites, brands, content, and everything in between — for businesses ready to stand out.",
@@ -12,13 +12,14 @@ export const navLinks = [
   { label: "Work", href: "#work" },
   { label: "Services", href: "#services" },
   { label: "Process", href: "#process" },
+  { label: "Founders", href: "#founders" },
   { label: "Contact", href: "#contact" },
 ] as const;
 
 export const heroContent = {
   headline: "Your business deserves more than a template.",
   subheadline:
-    "GrowZero is a creative growth studio that crafts premium digital experiences — websites, brands, content, and everything in between — for businesses ready to stand out.",
+    "GrowZero is a creative growth studio that crafts premium digital experiences \u2014 websites, brands, content, and everything in between \u2014 for businesses ready to stand out.",
   cta: "Start a project",
   secondaryCta: "See our work",
 };
@@ -46,9 +47,9 @@ export const aboutContent = {
     "Every website we build, every brand we shape, every piece of content we create is designed with intention. Because your audience notices the difference \u2014 even when they can\u2019t explain why.",
   ],
   stats: [
-    { value: "50+", label: "Projects delivered" },
-    { value: "3+", label: "Years of craft" },
+    { value: "2", label: "Founders" },
     { value: "100%", label: "Custom \u2014 always" },
+    { value: "\u221e", label: "Attention to detail" },
   ],
 };
 
@@ -100,63 +101,72 @@ export interface PortfolioItem {
   title: string;
   category: string;
   description: string;
-  image: string;
+  tags: string[];
   color: string;
+  isConceptProject: boolean;
 }
 
 export const workContent = {
   label: "Work",
-  headline: "Selected projects.",
+  headline: "Concept showcase.",
   description:
-    "A curated look at recent work across brand, web, and content. Every project starts with a conversation \u2014 and ends with something we\u2019re both proud of.",
+    "A curated look at the type of work we craft \u2014 across brand, web, and content. These are concept projects that demonstrate our creative direction and capabilities.",
+  conceptNote:
+    "Concept projects \u2014 illustrating our creative direction and the depth of thinking we bring to every engagement.",
   items: [
     {
       title: "Apex Fitness",
-      category: "Brand Identity + Website",
+      category: "Brand Identity + Web Design",
       description:
-        "A bold brand identity and high-performance website for a premium fitness studio.",
-      image: "/images/portfolio-1.jpg",
+        "A performance-first fitness studio needed a brand that matched its intensity. We designed a bold visual identity and a high-speed website built around conversion \u2014 booking classes, showcasing trainers, and communicating a premium member experience.",
+      tags: ["Brand System", "Web Design", "UI/UX", "Copywriting"],
       color: "#3A4D3A",
+      isConceptProject: true,
     },
     {
       title: "Bloom Caf\u00e9",
-      category: "Social Media + Content",
+      category: "Social Media + Content Strategy",
       description:
-        "Warm, inviting social content that tripled engagement in three months.",
-      image: "/images/portfolio-2.jpg",
+        "A beloved neighbourhood caf\u00e9 with loyal regulars but no social presence. We built a content strategy rooted in warmth, ritual, and community \u2014 turning daily moments into shareable stories that attract new guests.",
+      tags: ["Content Strategy", "Social Media", "Reels", "Brand Voice"],
       color: "#5D4A4A",
+      isConceptProject: true,
     },
     {
-      title: "Studio Nine",
-      category: "Web Design + Development",
+      title: "Luminary Salon",
+      category: "Website + Brand Identity",
       description:
-        "A sleek, conversion-focused website for a modern co-working space.",
-      image: "/images/portfolio-3.jpg",
-      color: "#4A4D5D",
-    },
-    {
-      title: "The Craft Salon",
-      category: "Brand Identity + Reels",
-      description:
-        "Elevated brand positioning and scroll-stopping reels for a luxury salon.",
-      image: "/images/portfolio-4.jpg",
+        "A luxury salon repositioning itself for a premium clientele. We crafted a refined visual identity, an editorial website, and a short-form video content system that communicated elegance without saying a word.",
+      tags: ["Brand Identity", "Web Design", "Reels", "Photography Direction"],
       color: "#5D5A4A",
+      isConceptProject: true,
     },
     {
-      title: "Coach Arjun",
-      category: "Digital Strategy + Website",
+      title: "Aryan Singh \u2014 Life Coach",
+      category: "Personal Brand + Website",
       description:
-        "A personal brand and website that positioned a coach as an industry authority.",
-      image: "/images/portfolio-5.jpg",
+        "A certified life coach building credibility in a crowded market. We developed a personal brand strategy, a conversion-focused website, and a content framework that positioned him as a genuine authority in his niche.",
+      tags: ["Personal Branding", "Web Design", "Content Framework", "Copywriting"],
       color: "#4A5D55",
+      isConceptProject: true,
     },
     {
-      title: "Neighborhood Eats",
+      title: "The Corner Kitchen",
       category: "Content Creation + Social",
       description:
-        "Mouth-watering content and social strategy for a beloved local restaurant.",
-      image: "/images/portfolio-6.jpg",
+        "A local restaurant wanted to fill seats and build a community online. We built a visual content system around their food, their people, and their story \u2014 creating a consistent social presence that turned followers into regulars.",
+      tags: ["Content Creation", "Social Strategy", "Reels", "Community"],
       color: "#5D4A55",
+      isConceptProject: true,
+    },
+    {
+      title: "FlowSpace",
+      category: "Digital Presence + Web Design",
+      description:
+        "A boutique co-working studio with a strong local community but a weak digital presence. We designed a minimal, elegant website and a social content strategy that communicated the feeling of the space as much as the features.",
+      tags: ["Web Design", "Brand Direction", "Social Strategy", "Copywriting"],
+      color: "#4A4D5D",
+      isConceptProject: true,
     },
   ] as PortfolioItem[],
 };
@@ -200,35 +210,43 @@ export const processContent = {
   ] as ProcessStep[],
 };
 
-export interface Testimonial {
-  quote: string;
+export interface Founder {
   name: string;
-  business: string;
+  role: string;
+  responsibilities: string[];
+  bio: string;
 }
 
-export const testimonialsContent = {
-  label: "Testimonials",
-  headline: "What our partners say.",
+export const foundersContent = {
+  label: "Founders",
+  headline: "The people behind GrowZero.",
+  description:
+    "Two founders. Two disciplines. One shared belief that great design and smart strategy can change the trajectory of any business.",
   items: [
     {
-      quote:
-        "GrowZero completely transformed how our brand shows up online. The website alone doubled our inquiries in the first month.",
-      name: "Priya Sharma",
-      business: "Bloom Caf\u00e9",
+      name: "Bhavay Vasudev",
+      role: "Co-Founder",
+      responsibilities: [
+        "Website Design & Development",
+        "Technical Implementation",
+        "Digital Experiences",
+        "Product & Technology",
+      ],
+      bio: "Bhavay leads the technical and design side of GrowZero. He builds the digital experiences \u2014 from the first wireframe to the final line of code \u2014 ensuring every website is fast, beautiful, and built with intention.",
     },
     {
-      quote:
-        "They didn\u2019t just build us a website \u2014 they gave us a brand we\u2019re genuinely proud of. The quality is unmatched.",
-      name: "Arjun Mehta",
-      business: "Coach Arjun",
+      name: "Nipun Goel",
+      role: "Co-Founder",
+      responsibilities: [
+        "Social Media Strategy",
+        "Content Planning",
+        "Brand Growth",
+        "Community Building",
+        "Creative Marketing",
+      ],
+      bio: "Nipun leads the creative and growth side of GrowZero. He shapes the strategy behind every brand story \u2014 from content systems to social presence \u2014 turning attention into lasting relationships.",
     },
-    {
-      quote:
-        "Working with GrowZero feels like having a creative team in-house. They get it \u2014 every time.",
-      name: "Nisha Patel",
-      business: "The Craft Salon",
-    },
-  ] as Testimonial[],
+  ] as Founder[],
 };
 
 export const contactContent = {
@@ -236,7 +254,7 @@ export const contactContent = {
   headline: "Let\u2019s build something exceptional.",
   description:
     "Every great project starts with a conversation. Tell us about your business, your vision, and where you want to go \u2014 we\u2019ll take it from there.",
-  email: "hello@growzero.studio",
+  email: "infogrowzero@gmail.com",
 };
 
 export const footerContent = {
@@ -244,8 +262,8 @@ export const footerContent = {
   copyright: `\u00a9 ${new Date().getFullYear()} GrowZero. All rights reserved.`,
   crafted: "Designed with intention.",
   social: [
-    { label: "Instagram", href: "https://instagram.com/growzero" },
-    { label: "Twitter / X", href: "https://x.com/growzero" },
-    { label: "LinkedIn", href: "https://linkedin.com/company/growzero" },
+    { label: "Instagram", href: "#", comingSoon: true },
+    { label: "LinkedIn", href: "#", comingSoon: true },
+    { label: "Twitter\u00a0/\u00a0X", href: "#", comingSoon: true },
   ],
 };
